@@ -22,8 +22,7 @@ namespace QOISharp.Benchmarks
 
         private byte[] encoderFileData;
         private byte[] decoderFileData;
-        //private Stream inputStream;
-        //private Stream outputStream;
+
         private PixelReaderBase pixelReader;
         private PixelWriterBase pixelWriter;
 
@@ -60,8 +59,6 @@ namespace QOISharp.Benchmarks
 
             encoder = new Encoder(pixelReader, encoderOutputStream);
             decoder = new Decoder(decoderInputStream, pixelWriter);
-
-            GC.Collect();
         }
 
         [GlobalCleanup]

@@ -54,7 +54,6 @@ namespace QOISharp.PixelReaders
                 reader.Dispose();
         }
 
-
         public override Color GetNextPixel()
         {
             int GetChannelValue()

@@ -17,7 +17,6 @@ namespace QOISharp.PixelReaders
                 {
                     stream.Seek(0, SeekOrigin.Begin);
                     return new PortablePixelFormatReader(stream);
-
                 }
             }
 
